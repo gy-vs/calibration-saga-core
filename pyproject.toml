@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "durable-saga"
+version = "0.1.0"
+description = "进程退出后仍可恢复确认的异步有序步骤（Saga）库，SQLite 持久化，无外部依赖"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["durable_saga*"]

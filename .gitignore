@@ -3,6 +3,10 @@ node_modules/
 __pycache__/
 *.py[cod]
 *.egg-info/
+*.db
+*.db-wal
+*.db-shm
+workdir_demo/
 dist/
 build/
 .pytest_cache/
