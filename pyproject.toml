@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "durable-calibration"
+version = "0.1.0"
+description = "嵌入式持久化校准流程编排库：SQLite + asyncio，崩溃后可确认并恢复仪器外部操作"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "acquisition-service" }]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+durable_calibration = ["py.typed"]
